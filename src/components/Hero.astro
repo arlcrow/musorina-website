@@ -1,0 +1,38 @@
+---
+import { Picture } from "astro:assets";
+import myPhoto from "../images/photo.jpg";
+---
+
+<section id="hero" class="px-6 py-12 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
+    <div class="max-w-xl space-y-4">
+        <p class="text-sm text-gray-600">📖 Добро пожаловать на мой сайт!</p>
+        <h2 class="text-4xl font-bold text-gray-900 leading-tight">
+            Нарушение речевого развития ребёнка
+            <span class="bg-linear-to-r  from-black to-blue-600 inline-block text-transparent bg-clip-text">&mdash;</span>
+            <span class="text-blue-500">это загадочная дверь, к которой необходимо найти подходящий ключ.</span>
+        </h2>
+        <p class="text-gray-700">
+            Здесь я делюсь своим опытом и полезными материалами.
+        </p>
+    </div>
+    <div class="relative mt-10 ml-auto mr-auto md:mt-0">
+        <div class="w-72 h-72 bg-pink-200 rounded-full absolute top-0 left-0 -z-10"></div>
+        <Picture
+                src={myPhoto}
+                alt="Фото"
+                formats={["webp"]}
+                widths={[512, 1024, 2048]}
+                loading="lazy"
+                decoding="async"
+                class="w-72 h-72 rounded-full object-cover"
+        />
+        <div class="absolute bottom-4 left-4 bg-white shadow-lg p-3 rounded-lg text-sm flex items-center space-x-2">
+            <span class="text-gray-900 font-semibold">Мусорина Лариса Сергеевна</span>
+            <span>✏️</span>
+        </div>
+        <div class="absolute top-4 right-4 bg-white shadow-lg p-3 rounded-lg text-sm flex items-center space-x-2">
+            <span class="text-gray-900 font-semibold">Учитель-логопед</span>
+            <span class="text-gray-500">📚</span>
+        </div>
+    </div>
+</section>

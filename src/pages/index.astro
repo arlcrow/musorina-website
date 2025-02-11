@@ -17,13 +17,12 @@ import publications from "../images/illustrations/publications.png";
 			</div>
 			<h1 class="text-xl font-bold text-gray-900">Мусорина Лариса</h1>
 		</div>
-		<nav class="flex space-x-6 mt-4 md:mt-0 md:flex-row md:space-x-6 text-center md:text-left">
+		<nav class="flex flex-grow md:flex-row mt-4 gap-4 space-y-4">
 			<a href="#about" class="hover:text-blue-500">Обо мне</a>
 			<a href="#education" class="hover:text-blue-500">Образование</a>
 			<a href="#materials" class="hover:text-blue-500">Полезные материалы</a>
 		</nav>
 	</header>
-
 
 	<section id="hero" class="px-6 py-12 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
 		<div class="max-w-xl space-y-4">
@@ -263,6 +262,17 @@ import publications from "../images/illustrations/publications.png";
 				</tr>
 				</tbody>
 			</table>
+		</div>
+	</section>
+
+	<section class="px-6 py-12 max-w-7xl mx-auto items-center" id="footer">
+		<div class="text-gray-500 pt-2 pb-2 flex flex-col md:flex-row items-center justify-between">
+			<div class="text-center md:text-left mb-4 md:mb-0">
+				<p class="text-sm">
+					&copy; {new Date().getFullYear()} Мусорина Лариса. Разработчик:
+					<a href="https://arlcrow.site" class="text-blue-500 hover:text-blue-700">Матвей Александров</a>
+				</p>
+			</div>
 		</div>
 	</section>
 </Layout>

@@ -8,8 +8,8 @@ import publications from "../images/illustrations/publications.png";
 ---
 
 <Layout title="">
-	<header class="p-6 max-w-7xl mx-auto flex justify-between items-center">
-		<div class="flex items-center space-x-3">
+	<header class="p-6 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:justify-start md:items-center md:space-x-6">
+		<div class="flex items-center space-x-3 mb-4 md:mb-0 md:flex-row">
 			<div class="flex space-x-2">
 				<span class="w-3 h-3 bg-yellow-400 rounded-full"></span>
 				<span class="w-3 h-3 bg-purple-400 rounded-full"></span>
@@ -17,19 +17,21 @@ import publications from "../images/illustrations/publications.png";
 			</div>
 			<h1 class="text-xl font-bold text-gray-900">Мусорина Лариса</h1>
 		</div>
-		<nav class="flex space-x-6 text-gray-700">
+		<nav class="flex space-x-6 mt-4 md:mt-0 md:flex-row md:space-x-6 text-center md:text-left">
 			<a href="#about" class="hover:text-blue-500">Обо мне</a>
 			<a href="#education" class="hover:text-blue-500">Образование</a>
 			<a href="#materials" class="hover:text-blue-500">Полезные материалы</a>
 		</nav>
 	</header>
 
+
 	<section id="hero" class="px-6 py-12 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
 		<div class="max-w-xl space-y-4">
 			<p class="text-sm text-gray-600">📖 Добро пожаловать на мой сайт!</p>
 			<h2 class="text-4xl font-bold text-gray-900 leading-tight">
-				В каждом ребенке скрыт уникальный мир, и моя цель — помочь ему открыть его и стать настоящим
-				<span class="text-blue-600">хранителем своей собственной сказки.</span>
+				Нарушение речевого развития ребёнка
+				<span class="bg-linear-to-r  from-black to-blue-600 inline-block text-transparent bg-clip-text">&mdash;</span>
+				<span class="text-blue-600">это загадочная дверь, к которой необходимо найти подходящий ключ.</span>
 			</h2>
 			<p class="text-gray-700">
 				Здесь я делюсь своим опытом и полезными материалами.
@@ -64,7 +66,7 @@ import publications from "../images/illustrations/publications.png";
 				Меня зовут <strong>Лариса, и я учитель-логопед.</strong>
 			</p>
 			<p class="text-gray-800">
-				Я учитель-логопед средней общеобразовательной школы № 6 г. Соснового Бора. В 2008 году поступила в РГПУ им. А.И. Герцена, и уже на первом курсе поняла, что выбрала правильный путь. С 2013 года работаю в средней школе № 6 в Сосновом Бору, занимаюсь инклюзивным образованием детей с ограниченными возможностями здоровья.
+				Я учитель-логопед средней общеобразовательной школы № 6 г. Сосновый Бор. В 2008 году поступила в РГПУ им. А.И. Герцена, и уже на первом курсе поняла, что выбрала правильный путь. С 2013 года работаю в средней школе № 6 в Сосновом Бору, занимаюсь инклюзивным образованием детей с ограниченными возможностями здоровья.
 			</p>
 			<div class="text-gray-800">
 				<p class="font-medium">Мои ценности:</p>
@@ -86,9 +88,6 @@ import publications from "../images/illustrations/publications.png";
 	<section id="education" class="px-6 py-12 max-w-7xl mx-auto items-center">
 		<div class="space-y-6">
 			<h2 class="text-3xl font-bold text-blue-600">Образование</h2>
-			<!-- <p class="text-gray-800">
-				Мой профессиональный стаж — более 14 лет, и всё это время я продолжаю учиться...
-			</p> -->
 			<div class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6">
 				<div
 					class="bg-red-400 p-0 rounded-lg shadow-md flex-1 text-center cursor-pointer"
@@ -203,10 +202,10 @@ import publications from "../images/illustrations/publications.png";
 					carouselData[modalId].forEach((src) => {
 						const slide = document.createElement("swiper-slide");
 						slide.innerHTML = `
-            <div class="bg-white p-2 rounded-lg shadow-md">
-              <img src="${src}" alt="Изображение" class="w-full h-auto object-cover rounded-lg">
-            </div>
-          `;
+							<div class="bg-white p-2 rounded-lg shadow-md">
+								<img src="${src}" alt="Изображение" class="w-full h-auto object-cover rounded-lg">
+							</div>
+						`;
 						modalCarousel.appendChild(slide);
 					});
 
@@ -229,7 +228,6 @@ import publications from "../images/illustrations/publications.png";
 	<section id="materials" class="px-6 py-12 max-w-7xl mx-auto items-center">
 		<div class="space-y-6">
 			<h2 class="text-3xl font-bold text-blue-600">Полезные материалы</h2>
-			<!-- <p class="text-lg text-gray-800">Ресурсы для родителей и учителей</p> -->
 		</div>
 
 		<div class="overflow-x-auto mt-8">
@@ -244,9 +242,9 @@ import publications from "../images/illustrations/publications.png";
 				<tr>
 					<td class="px-6 py-4">
 						<ul class="space-y-2">
-							<li><a href="/materials/parents/Анкета%20для%20родителей.docx" class="text-blue-500 hover:underline">Анкета для родителей</a></li>
+							<li><a href="/materials/parents/Анкета%20для%20родителей.docx" class="text-blue-500 hover:underline">Анкета для родителей</a></li>
 							<li><a href="/materials/parents/Логопед%20родителям.docx" class="text-blue-500 hover:underline">Логопед родителям</a></li>
-							<li><a href="/materials/parents/Рекомендации%20для%20родителей.docx" class="text-blue-500 hover:underline">Рекомендации для родителей</a></li>
+							<li><a href="/materials/parents/Рекомендации%20для%20родителей.docx" class="text-blue-500 hover:underline">Рекомендации для родителей</a></li>
 							<li><a href="/materials/parents/Советы%20логопеда%20родителям.docx" class="text-blue-500 hover:underline">Советы логопеда родителям</a></li>
 						</ul>
 					</td>
@@ -257,10 +255,9 @@ import publications from "../images/illustrations/publications.png";
 							<li><a href="/materials/teacher/Диктанты%20Начало%20года.docx" class="text-blue-500 hover:underline">Диктанты Начало года</a></li>
 							<li><a href="/materials/teacher/Диктанты%202018.docx" class="text-blue-500 hover:underline">Диктанты 2018</a></li>
 							<li><a href="/materials/teacher/Косая%20линия.docx" class="text-blue-500 hover:underline">Косая линия</a></li>
-							<li><a href="/materials/teacher/Логопедическая%20диагностика%20письменной%20речи%20обучащихся%20НОО.docx" class="text-blue-500 hover:underline">Логопедическая диагностика письменной речи обучащихся НОО</a></li>
-							<li><a href="/materials/teacher/ЛОГОПЕДИЧЕСКИЕ%20ДИКТАНТЫ.docx" class="text-blue-500 hover:underline">Логопедические диктанты</a></li>
-							<li><a href="/materials/teacher/Рекомендации%20для%20учителей.docx" class="text-blue-500 hover:underline">Рекомендации для учителей</a></li>
-							<li><a href="/materials/teacher/Таблица%20отчет%202%20-%204%20классы%2018-19.docx" class="text-blue-500 hover:underline">Таблица отчет 2-4 классы 18-19</a></li>
+							<li><a href="/materials/teacher/Логопедическая%20диагностика.docx" class="text-blue-500 hover:underline">Логопедическая диагностика</a></li>
+							<li><a href="/materials/teacher/Методические%20рекомендации.docx" class="text-blue-500 hover:underline">Методические рекомендации</a></li>
+							<li><a href="/materials/teacher/Речь.docx" class="text-blue-500 hover:underline">Речь</a></li>
 						</ul>
 					</td>
 				</tr>
@@ -268,18 +265,4 @@ import publications from "../images/illustrations/publications.png";
 			</table>
 		</div>
 	</section>
-
-	<section class="px-6 py-12 max-w-7xl mx-auto items-center" id="footer">
-		<div class="text-gray-500 pt-2 pb-2 flex flex-col md:flex-row items-center justify-between">
-			<div class="text-center md:text-left mb-4 md:mb-0">
-				<p class="text-sm">
-					&copy; {new Date().getFullYear()} Мусорина Лариса. Разработчик:
-					<a href="https://arlcrow.site" class="text-blue-500 hover:text-blue-700">Матвей Александров</a>
-				</p>
-			</div>
-		</div>
-	</section>
-
-
-
 </Layout>
